@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f06, #4a90e2);
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 5em;
+            animation: pulse 1.5s infinite;
+            transition: transform 0.3s, text-shadow 0.3s, content 0.3s;
+        }
+        h1:hover {
+            content: "Welcome to My Page";
+            transform: scale(1.1);
+            text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+            50% {
+                transform: scale(1.1);
+                text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+            }
+            100% {
+                transform: scale(1);
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="message">Hello World</h1>
+    <script>
+        const messageElement = document.getElementById('message');
+        messageElement.addEventListener('mouseover', () => {
+            messageElement.textContent = 'Welcome to My Page';
+        });
+        messageElement.addEventListener('mouseout', () => {
+            messageElement.textContent = 'Hello World';
+        });
+    </script>
+</body>
+</html>
