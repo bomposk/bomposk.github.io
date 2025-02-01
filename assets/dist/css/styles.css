@@ -1,0 +1,186 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #000;
+  --background-color: rgba(255, 255, 255, 0.9);
+  --text-color: #000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+
+
+body {
+  /* font-family: Arial, sans-serif;*/
+  line-height: 1.6; 
+  /* font-family: "Barlow", sans-serif;
+  color: var(--body);
+  line-height: 1.7; */
+}
+
+
+/* Logo styling */
+.logo {
+  height: 50px; /* Adjust as needed */
+  width: auto;
+  position: absolute; /* Absolute positioning to move them to the corners */
+}
+
+.left-logo {
+  left: 20px; /* Slight margin from the left side */
+}
+
+.right-logo {
+  right: 20px; /* Slight margin from the right side */
+}
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card.card-footer {
+    align-self: flex-end;
+    flex: 1 1 auto;
+}
+
+.pliriforiakaSistimata img {
+  width: 22rem;
+  height: 6rem;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.sharedFolder .title-link {
+  text-align: center; /* Centers the text */
+  margin: 20px 0; /* Optional: Adds spacing above and below the title */
+}
+
+.sharedFolder .centered-link {
+  text-decoration: none; /* Removes underline */
+  color: #000; /* Change to your desired color */
+  /*font-weight: bold;  Optional: Makes the title bold */
+}
+
+.sharedFolder .centered-link:hover {
+  text-decoration: underline; /* Adds underline on hover */
+  color: var(--primary-color);
+  transition: color 0.3s ease-in-out;
+}
+
+
+.sharedFolder-container {
+  /*display: flex;
+  justify-content: space-between;  Adjust as needed
+  flex-wrap: wrap;  Allows wrapping if container is too narrow */
+  display: block; /* Change from flex to block for vertical layout */
+}
+.sharedFolder {
+  background: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 10px;
+  overflow: hidden; /* Ensure content stays within the card */
+}
+.sharedFolder img {
+  max-width: 100%; /* Optional: limit the maximum width */
+  height: auto; /* Set a fixed height */
+  display: block; /* Remove any default spacing below image */
+  border-radius: 8px 8px 0 0; /* Rounded corners for top */
+  object-fit: cover; /* Ensure images cover the entire container */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+.sharedFolder p, .sharedFolder ul {
+  margin-bottom: 10px;
+  flex-grow: 1; /* Ensures the text takes the remaining space */
+  text-align: justify; /* Aligns text to both left and right */
+}
+.sharedFolder ul {
+  padding-left: 0;
+  list-style: none;
+}
+.sharedFolder ul li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: flex-start;
+}
+.sharedFolder ul li::before {
+  /*content: "\2713";  Check mark symbol */
+  content: "\2022"; /* Default bullet (•) */
+  color: #000000;
+  font-weight: bold;
+  margin-right: 10px;
+  flex-shrink: 0; /* Prevents shrinking of the icon */
+  line-height: 1.6; /* Ensure it aligns vertically */
+}
+.sharedFolder ul li span {
+  flex-grow: 1; /* Ensures the text takes the remaining space */
+  text-align: justify; /* Aligns text to both left and right */
+}
+
+
+/*  */
